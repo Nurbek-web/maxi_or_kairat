@@ -3,7 +3,7 @@ from fastai.vision.all import *
 from fastbook import *
 from fastai.vision.widgets import *
 import gradio as gr
-import pathlib
+from pathlib import Path
 
 plt = platform.system()
 if plt == 'Windows': pathlib.PosixPath = pathlib.WindowsPath
