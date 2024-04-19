@@ -5,9 +5,6 @@ from fastai.vision.widgets import *
 import gradio as gr
 from pathlib import Path
 
-plt = platform.system()
-if plt == 'Windows': pathlib.PosixPath = pathlib.WindowsPath
-
 learn_inf = load_learner(Path('export.pkl'))
 
 categories = ("maxi", "kairat")
