@@ -3,7 +3,10 @@ from fastai.vision.all import *
 from fastbook import *
 from fastai.vision.widgets import *
 import gradio as gr
+import pathlib
 
+plt = platform.system()
+if plt == 'Windows': pathlib.PosixPath = pathlib.WindowsPath
 
 learn_inf = load_learner('export.pkl')
 
