@@ -6,7 +6,8 @@ import gradio as gr
 from pathlib import Path
 import pathlib 
 
-plt = platform.system() if plt == 'Linux': pathlib.WindowsPath = pathlib.PosixPath
+plt = platform.system()
+if plt == 'Linux': pathlib.WindowsPath = pathlib.PosixPath
 
 learn_inf = load_learner(Path('export.pkl'))
 
