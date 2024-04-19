@@ -18,5 +18,5 @@ def classify_image(img):
     return dict(zip(categories, map(float, probs)))
 
 examples = ["maxi.jpg", "kairat.jpeg"]
-intf = gr.Interface(fn=classify_image, inputs=gr.components.Image(height=192, width=192)), outputs=gr.components.Label(), examples=examples)
+intf = gr.Interface(fn=classify_image, inputs=gr.components.Image(height=192, width=192), outputs=gr.components.Label(), examples=examples)
 intf.launch(inline=False,share=True)
